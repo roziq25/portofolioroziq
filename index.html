@@ -164,6 +164,24 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* Ikon pada skill items */
+        .skill-icon {
+            width: 1.25rem;
+            margin-right: 0.5rem;
+            display: inline-block;
+            text-align: center;
+        }
+        .skills-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .skills-list li i {
+            width: 1.25rem;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -254,48 +272,69 @@
         </div>
     </section>
 
-    <!-- SKILLS SECTION - 4 KATEGORI BARU -->
+    <!-- SKILLS SECTION - 4 KATEGORI DENGAN LOGO PADA TECH STACK & SOFT SKILLS -->
     <section id="skills" class="py-24 px-4 bg-transparent">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-light-highlight dark:text-dark-text" data-i18n="skills-title">Keahlian Profesional</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Tech Stack Card -->
+                <!-- Tech Stack Card dengan Logo -->
                 <div class="hover-card glass-panel p-6 rounded-2xl bg-transparent">
                     <i class="fa-solid fa-laptop-code text-3xl mb-4 text-light-highlight dark:text-dark-border"></i>
                     <h3 class="text-xl font-bold mb-3" data-i18n="skills-tech-title">Tech Stack</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li data-i18n="skill-php">PHP</li><li data-i18n="skill-python">Python</li><li data-i18n="skill-java">Java</li>
-                        <li data-i18n="skill-js">JavaScript</li><li data-i18n="skill-c">C</li><li data-i18n="skill-sql">SQL</li>
+                    <ul class="space-y-2 text-sm skills-list">
+                        <li><i class="fab fa-php text-indigo-400"></i> <span data-i18n="skill-php">PHP</span></li>
+                        <li><i class="fab fa-python text-blue-400"></i> <span data-i18n="skill-python">Python</span></li>
+                        <li><i class="fab fa-java text-red-500"></i> <span data-i18n="skill-java">Java</span></li>
+                        <li><i class="fab fa-js text-yellow-500"></i> <span data-i18n="skill-js">JavaScript</span></li>
+                        <li><i class="fas fa-code text-gray-400"></i> <span data-i18n="skill-c">C</span></li>
+                        <li><i class="fas fa-database text-cyan-400"></i> <span data-i18n="skill-sql">SQL</span></li>
                     </ul>
                 </div>
-                <!-- Industrial Engineer Card -->
+                <!-- Industrial Engineer Card (tools, tidak perlu terjemahan) -->
                 <div class="hover-card glass-panel p-6 rounded-2xl bg-transparent">
                     <i class="fa-solid fa-industry text-3xl mb-4 text-light-highlight dark:text-dark-border"></i>
                     <h3 class="text-xl font-bold mb-3" data-i18n="skills-industrial-title">Industrial Engineer</h3>
-                    <ul class="space-y-1 text-sm columns-2 gap-x-2">
-                        <li>Flexim</li><li>SketchUp</li><li>MS Access</li><li>MS Visio</li><li>MS Project</li><li>MS Excel</li>
-                        <li>Ansys & Inventor</li><li>ERP & Odoo</li><li>Lingo</li><li>POM-QM</li><li>MATLAB</li>
-                        <li>Minitab</li><li>Blocplan</li><li>Corelap</li>
+                    <ul class="space-y-1 text-sm columns-2 gap-x-2 skills-list">
+                        <li><i class="fas fa-chart-line"></i> Flexim</li>
+                        <li><i class="fas fa-cube"></i> SketchUp</li>
+                        <li><i class="fas fa-database"></i> MS Access</li>
+                        <li><i class="fas fa-project-diagram"></i> MS Visio</li>
+                        <li><i class="fas fa-tasks"></i> MS Project</li>
+                        <li><i class="fas fa-table"></i> MS Excel</li>
+                        <li><i class="fas fa-cogs"></i> Ansys & Inventor</li>
+                        <li><i class="fas fa-chalkboard"></i> ERP & Odoo</li>
+                        <li><i class="fas fa-calculator"></i> Lingo</li>
+                        <li><i class="fas fa-chart-bar"></i> POM-QM</li>
+                        <li><i class="fas fa-chart-simple"></i> MATLAB</li>
+                        <li><i class="fas fa-chart-pie"></i> Minitab</li>
+                        <li><i class="fas fa-draw-polygon"></i> Blocplan</li>
+                        <li><i class="fas fa-layer-group"></i> Corelap</li>
                     </ul>
                 </div>
                 <!-- Multimedia Designer Card -->
                 <div class="hover-card glass-panel p-6 rounded-2xl bg-transparent">
                     <i class="fa-solid fa-palette text-3xl mb-4 text-light-highlight dark:text-dark-border"></i>
                     <h3 class="text-xl font-bold mb-3" data-i18n="skills-multimedia-title">Multimedia Designer</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li data-i18n="skill-uiux">UI/UX Design</li><li data-i18n="skill-graphic">Graphic Design</li>
-                        <li data-i18n="skill-videography">Videography</li><li data-i18n="skill-photography">Photography</li>
-                        <li data-i18n="skill-videoedit">Video Editor</li>
+                    <ul class="space-y-2 text-sm skills-list">
+                        <li><i class="fas fa-pen-ruler"></i> <span data-i18n="skill-uiux">UI/UX Design</span></li>
+                        <li><i class="fas fa-paintbrush"></i> <span data-i18n="skill-graphic">Graphic Design</span></li>
+                        <li><i class="fas fa-video"></i> <span data-i18n="skill-videography">Videography</span></li>
+                        <li><i class="fas fa-camera"></i> <span data-i18n="skill-photography">Photography</span></li>
+                        <li><i class="fas fa-film"></i> <span data-i18n="skill-videoedit">Video Editor</span></li>
                     </ul>
                 </div>
-                <!-- Soft Skill Card -->
+                <!-- Soft Skill Card dengan Logo & Terjemahan Full -->
                 <div class="hover-card glass-panel p-6 rounded-2xl bg-transparent">
                     <i class="fa-solid fa-people-group text-3xl mb-4 text-light-highlight dark:text-dark-border"></i>
                     <h3 class="text-xl font-bold mb-3" data-i18n="skills-soft-title">Soft Skills</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li>Teamwork</li><li>Leadership</li><li>Strategic thinking</li>
-                        <li>Communication</li><li>Adaptability</li><li>Creativity</li>
+                    <ul class="space-y-2 text-sm skills-list">
+                        <li><i class="fas fa-users"></i> <span data-i18n="skill-teamwork">Teamwork</span></li>
+                        <li><i class="fas fa-chalkboard-user"></i> <span data-i18n="skill-leadership">Leadership</span></li>
+                        <li><i class="fas fa-brain"></i> <span data-i18n="skill-strategic">Strategic thinking</span></li>
+                        <li><i class="fas fa-comments"></i> <span data-i18n="skill-communication">Communication</span></li>
+                        <li><i class="fas fa-leaf"></i> <span data-i18n="skill-adaptability">Adaptability</span></li>
+                        <li><i class="fas fa-lightbulb"></i> <span data-i18n="skill-creativity">Creativity</span></li>
                     </ul>
                 </div>
             </div>
@@ -350,68 +389,68 @@
         </div>
     </section>
 
-  <!-- PROJECTS SECTION - 3 PROYEK DENGAN GAMBAR -->
-<section id="projects" class="py-24 px-4 bg-transparent">
-    <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-light-highlight dark:text-dark-text" data-i18n="projects-title">Karya & Proyek</h2>
-        <p class="text-center mb-16 max-w-2xl mx-auto opacity-80" data-i18n="projects-subtitle">Studi kasus bagaimana saya menjembatani rekayasa industri dan solusi digital.</p>
-        
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Proyek 1: Sistem Informasi K3 PT. SBA -->
-            <div class="hover-card glass-panel rounded-2xl overflow-hidden flex flex-col bg-transparent">
-                <div class="h-48 overflow-hidden bg-gray-900/20">
-                    <img src="SBA.png" alt="Sistem Informasi K3 PT. SBA" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold mb-2" data-i18n="p1-title">Sistem Informasi K3 PT. SBA</h3>
-                        <p class="text-sm opacity-90 mb-4" data-i18n="p1-desc">Aplikasi manajemen Keselamatan & Kesehatan Kerja terintegrasi, pelaporan insiden, dan analisis hazard.</p>
-                        <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="text-xs border px-2 py-1 rounded">PHP</span>
-                            <span class="text-xs border px-2 py-1 rounded">JavaScript</span>
-                            <span class="text-xs border px-2 py-1 rounded">Tailwind</span>
-                            <span class="text-xs border px-2 py-1 rounded">SQL</span>
+    <!-- PROJECTS SECTION - 3 PROYEK DENGAN GAMBAR -->
+    <section id="projects" class="py-24 px-4 bg-transparent">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-light-highlight dark:text-dark-text" data-i18n="projects-title">Karya & Proyek</h2>
+            <p class="text-center mb-16 max-w-2xl mx-auto opacity-80" data-i18n="projects-subtitle">Studi kasus bagaimana saya menjembatani rekayasa industri dan solusi digital.</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Proyek 1: Sistem Informasi K3 PT. SBA -->
+                <div class="hover-card glass-panel rounded-2xl overflow-hidden flex flex-col bg-transparent">
+                    <div class="h-48 overflow-hidden bg-gray-900/20">
+                        <img src="SBA.png" alt="Sistem Informasi K3 PT. SBA" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2" data-i18n="p1-title">Sistem Informasi K3 PT. SBA</h3>
+                            <p class="text-sm opacity-90 mb-4" data-i18n="p1-desc">Aplikasi manajemen Keselamatan & Kesehatan Kerja terintegrasi, pelaporan insiden, dan analisis hazard.</p>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="text-xs border px-2 py-1 rounded">PHP</span>
+                                <span class="text-xs border px-2 py-1 rounded">JavaScript</span>
+                                <span class="text-xs border px-2 py-1 rounded">Tailwind</span>
+                                <span class="text-xs border px-2 py-1 rounded">SQL</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Proyek 2: Web RJM RentCar -->
-            <div class="hover-card glass-panel rounded-2xl overflow-hidden flex flex-col bg-transparent">
-                <div class="h-48 overflow-hidden bg-gray-900/20">
-                    <img src="RJMRENT.png" alt="Web RJM RentCar" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold mb-2" data-i18n="p2-title">Web RJM RentCar</h3>
-                        <p class="text-sm opacity-90 mb-4" data-i18n="p2-desc">Platform penyewaan mobil dengan sistem booking, manajemen armada, dan laporan transaksi.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs border px-2 py-1 rounded">PHP</span>
-                            <span class="text-xs border px-2 py-1 rounded">JavaScript</span>
-                            <span class="text-xs border px-2 py-1 rounded">Tailwind</span>
+                <!-- Proyek 2: Web RJM RentCar -->
+                <div class="hover-card glass-panel rounded-2xl overflow-hidden flex flex-col bg-transparent">
+                    <div class="h-48 overflow-hidden bg-gray-900/20">
+                        <img src="RJMRENT.png" alt="Web RJM RentCar" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2" data-i18n="p2-title">Web RJM RentCar</h3>
+                            <p class="text-sm opacity-90 mb-4" data-i18n="p2-desc">Platform penyewaan mobil dengan sistem booking, manajemen armada, dan laporan transaksi.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs border px-2 py-1 rounded">PHP</span>
+                                <span class="text-xs border px-2 py-1 rounded">JavaScript</span>
+                                <span class="text-xs border px-2 py-1 rounded">Tailwind</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Proyek 3: Industri Desain PT. Chronobots -->
-            <div class="hover-card glass-panel rounded-2xl overflow-hidden flex flex-col bg-transparent">
-                <div class="h-48 overflow-hidden bg-gray-900/20">
-                    <img src="Chrono.jpeg" alt="Industri Desain PT. Chronobots" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold mb-2" data-i18n="p3-title">Industri Desain PT. Chronobots</h3>
-                        <p class="text-sm opacity-90 mb-4" data-i18n="p3-desc">Perancangan tata letak fasilitas & simulasi 3D menggunakan SketchUp, Blocplan, Corelap untuk optimalisasi lini produksi.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs border px-2 py-1 rounded">SketchUp</span>
-                            <span class="text-xs border px-2 py-1 rounded">Blocplan</span>
-                            <span class="text-xs border px-2 py-1 rounded">Corelap</span>
+                <!-- Proyek 3: Industri Desain PT. Chronobots -->
+                <div class="hover-card glass-panel rounded-2xl overflow-hidden flex flex-col bg-transparent">
+                    <div class="h-48 overflow-hidden bg-gray-900/20">
+                        <img src="Chrono.jpeg" alt="Industri Desain PT. Chronobots" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2" data-i18n="p3-title">Industri Desain PT. Chronobots</h3>
+                            <p class="text-sm opacity-90 mb-4" data-i18n="p3-desc">Perancangan tata letak fasilitas & simulasi 3D menggunakan SketchUp, Blocplan, Corelap untuk optimalisasi lini produksi.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs border px-2 py-1 rounded">SketchUp</span>
+                                <span class="text-xs border px-2 py-1 rounded">Blocplan</span>
+                                <span class="text-xs border px-2 py-1 rounded">Corelap</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <audio id="bg-music" loop>
         <source src="Flame-Runner.mp3" type="audio/mpeg">
@@ -484,7 +523,7 @@
                     clearInterval(interval);
                     overlay.classList.add('hide-overlay');
                     setTimeout(() => overlay.remove(), 1000);
-                }, 7300); // setelah 7 kalimat (7*0.9=6.3 detik)
+                }, 7300);
             }
         });
 
@@ -514,7 +553,7 @@
         // ========== LANGUAGE SWITCHER (INDONESIA & INGGRIS) ==========
         const translations = {
             id: {
-                "logo-name": "Dev<span class='text-light-text dark:text-dark-border'>Eng</span>",
+                "logo-name": "Roziq Rif<span class='text-light-text dark:text-dark-border'>qi Kasmara</span>",
                 "nav-home": "Beranda", "nav-about": "Tentang", "nav-skills": "Keahlian", "nav-achievement": "Pencapaian", "nav-projects": "Proyek",
                 "hero-title1": "Optimasi Sistem.", "hero-title2": "Presisi Digital.",
                 "hero-subtitle": "Saya memadukan pola pikir analitis seorang Sarjana Teknik Industri dengan keahlian Full-stack Web Developer untuk membangun sistem digital yang efisien dan terukur.",
@@ -527,6 +566,7 @@
                 "skills-tech-title": "Tech Stack", "skills-industrial-title": "Industrial Engineer", "skills-multimedia-title": "Multimedia Designer", "skills-soft-title": "Soft Skills",
                 "skill-php":"PHP","skill-python":"Python","skill-java":"Java","skill-js":"JavaScript","skill-c":"C","skill-sql":"SQL",
                 "skill-uiux":"UI/UX Design","skill-graphic":"Graphic Design","skill-videography":"Videography","skill-photography":"Photography","skill-videoedit":"Video Editor",
+                "skill-teamwork":"Kerja Tim","skill-leadership":"Kepemimpinan","skill-strategic":"Berpikir Strategis","skill-communication":"Komunikasi","skill-adaptability":"Adaptabilitas","skill-creativity":"Kreativitas",
                 "achieve-title": "Pencapaian & Sertifikasi",
                 "cert1-title": "BNSP Multimedia Designer", "cert1-desc": "Sertifikasi kompetensi desain multimedia, editing, produksi konten digital.",
                 "cert2-title": "BNSP Video Editor", "cert2-desc": "Sertifikasi profesional editing video, pasca produksi, dan manajemen footage.",
@@ -538,7 +578,7 @@
                 "contact-title": "Mari Berkolaborasi", "contact-desc": "Mencari developer yang memahami logika sistem bisnis dan optimasi proses? Hubungi saya."
             },
             en: {
-                "logo-name": "Dev<span class='text-light-text dark:text-dark-border'>Eng</span>",
+                "logo-name": "Roziq Rif<span class='text-light-text dark:text-dark-border'>qi Kasmara</span>",
                 "nav-home": "Home", "nav-about": "About", "nav-skills": "Skills", "nav-achievement": "Achievement", "nav-projects": "Projects",
                 "hero-title1": "System Optimization.", "hero-title2": "Digital Precision.",
                 "hero-subtitle": "Blending the analytical mindset of an Industrial Engineer with Full-stack Developer expertise to build efficient digital systems.",
@@ -551,6 +591,7 @@
                 "skills-tech-title": "Tech Stack", "skills-industrial-title": "Industrial Engineer", "skills-multimedia-title": "Multimedia Designer", "skills-soft-title": "Soft Skills",
                 "skill-php":"PHP","skill-python":"Python","skill-java":"Java","skill-js":"JavaScript","skill-c":"C","skill-sql":"SQL",
                 "skill-uiux":"UI/UX Design","skill-graphic":"Graphic Design","skill-videography":"Videography","skill-photography":"Photography","skill-videoedit":"Video Editor",
+                "skill-teamwork":"Teamwork","skill-leadership":"Leadership","skill-strategic":"Strategic thinking","skill-communication":"Communication","skill-adaptability":"Adaptability","skill-creativity":"Creativity",
                 "achieve-title": "Achievements & Certifications",
                 "cert1-title": "BNSP Multimedia Designer", "cert1-desc": "Certified competence in multimedia design, editing, and digital content production.",
                 "cert2-title": "BNSP Video Editor", "cert2-desc": "Professional video editing, post-production, and footage management certification.",
@@ -575,12 +616,6 @@
                     element.innerHTML = translations[currentLang][key];
                 }
             });
-            // update khusus untuk list skill yang tidak memiliki data-i18n (beberapa hardcode tetap bisa ditimpa via innerHTML? sudah via attribut)
-            // tambahan untuk elemen yang tidak tercover: skill list items pada industrial engineer? biar default indo/eng sesuai.
-            const industrialItems = document.querySelectorAll('#skills .hover-card:nth-child(2) ul li');
-            if (industrialItems.length) {
-                // konten industrial engineer tetap statis karena tools nama tool tidak diterjemahkan. biarkan.
-            }
         }
 
         // ========== MUSIC PLAYER ==========
